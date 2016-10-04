@@ -24,3 +24,6 @@ You can use this library as a dependency, as it is simply a mod. You can also ju
 ```json
 "includes" : [ "DollGenerator" ],
 ```
+
+## Thanks
+Special thanks to Mappo, Apple and the 100 people that have been running around holding dolls for the idea.
