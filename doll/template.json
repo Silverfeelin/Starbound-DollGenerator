@@ -1,0 +1,40 @@
+{
+  "inventoryIcon" : [],
+  "maxStack" : 1000,
+  "rarity" : "Essential",
+  "description" : "A doll of someone! They might exist, they might not.",
+  "shortdescription" : "Unknown Doll",
+  "github" : "https://github.com/Silverfeelin/Starbound-DollGenerator",
+  "category" : "^#C0C0C0;Squeak!^reset;",
+  "itemTags" : [],
+  "animationParts" : {
+    "middle" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/gun/squeaky1.ogg" ]
+    },
+    "animatedParts" : {
+      "parts" : {
+      }
+    }
+  },
+  "primaryAbility" : {
+    "fireTime" : 0,
+    "energyUsage" : 0,
+    "projectileCount" : 0,
+    "projectileType" : "invisibleprojectile",
+    "stances" : {
+      "idle" : {
+        "weaponOffset" : [0, 0.5]
+      },
+      "cooldown" : {
+        "duration" : 0.75,
+        "weaponOffset" : [0.5, 0.5],
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true
+      }
+    }
+  }
+}
