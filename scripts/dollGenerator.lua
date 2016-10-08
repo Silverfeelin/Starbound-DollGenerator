@@ -37,9 +37,11 @@ end
 
 --[[
   Returns the nearest player ID, or your own if no players were found nearby.
-  @return entity ID of the nearest player
+  @param [pos = mcontroller.position()] - Position to find closest player to.
+  @return - entity ID of the nearest player
 ]]
-function doll.nearestPlayer()
-  local ids = world.playerQuery(mcontroller.position(), 15, { includedTypes = { "player" }, withoutEntityId = entity.id() })
+function doll.nearestPlayer(pos)
+  pos = pos or mcontroller.position()
+  local ids = world.playerQuery(pos, 15, { includedTypes = { "player" }, withoutEntityId = entity.id() })
   return #ids > 0 and ids[1] or entity.id()
 end
